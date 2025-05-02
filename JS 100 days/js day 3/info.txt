@@ -1,0 +1,3 @@
+flex property
+arrow function
+FLEX ANIMATION

@@ -1,0 +1,4 @@
+textarea tag
+onkeyup function
+rows and cols
+.lenght and .value keywords

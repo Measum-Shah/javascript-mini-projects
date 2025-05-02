@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="">Drawing Pad</a>
+    <div class="sidebar">
+        <ul>
+            <li>
+                <li class="checkboxContainer">
+                    <label for="gradient">Gradient</label>
+                    <input type="checkbox" name="gradient" id="gradient">
+                </li>
+                <label for="color">Color</label>
+                <input type="color" id="color">
+                <label for="color">Gradient</label>
+                <input type="color" id="color2" disabled>
+            </li>
+            <li class="strokeContainer">
+                <label for="weight">Stroke:</label>
+                <input type="number" id="weight" min="2" max="200" value="5" data-sizing="px">
+            </li>
+
+          
+            <li class="radio">
+                <input type="radio" id="pencil" name="tool" value="pencil" checked>
+                <label for="pencil">Pencil:</label>
+            </li>
+            <li class="radio">
+                <input type="radio" id="line" name="tool" value="line" >
+                <label for="line">line:</label>
+            </li>
+            <li class="radio">
+                <input type="radio" id="rect" name="tool" value="rect" >
+                <label for="rect">Rectangle:</label>
+            </li>
+            <li class="radio">
+                <input type="radio" id="circle " name="tool" value="circle">
+                <label for="circle">Circle:</label>
+            </li>
+
+            <li>
+                <button id="clear">Clear
+                </button>
+            </li>
+        </ul>
+    </div>
+
+
+
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.10.0/p5.min.js" integrity="sha512-lvddmeF7aHRJwdbJeYThWd5kWSjTrXBzCRF/jYROiHzmhMJ1dEXfGH5Q7ft0yhizXTopAETG03s5ajTflauijA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+</html>

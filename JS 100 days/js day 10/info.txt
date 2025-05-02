@@ -1,0 +1,6 @@
+numbeer type in input
+list style type 
+input type selector in css
+splice()
+getcontext("2d)
+window.onlaod=

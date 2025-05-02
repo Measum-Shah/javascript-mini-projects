@@ -1,0 +1,65 @@
+type range type in input
+label tag
+min  and max in input
+data sizing attribute
+color type in input
+root used to make random variables
+change event listener
+update method in event listeners
+In JavaScript, the this keyword refers to an object.
+
+The this keyword refers to different objects depending on how it is used:
+
+In an object method, this refers to the object.
+Alone, this refers to the global object.
+In a function, this refers to the global object.
+In a function, in strict mode, this is undefined.
+In an event, this refers to the element that received the event.
+Methods like call(), apply(), and bind() can refer this to any object.In JavaScript, the this keyword refers to an object.
+
+The this keyword refers to different objects depending on how it is used:
+
+In an object method, this refers to the object.
+Alone, this refers to the global object.
+In a function, this refers to the global object.
+In a function, in strict mode, this is undefined.
+In an event, this refers to the element that received the event.
+Methods like call(), apply(), and bind() can refer this to any object.
+
+
+
+-----------------------------------------------------------
+This JavaScript line is likely part of a script that manipulates an element's dataset and adjusts the behavior based on the presence of a `data-sizing` attribute.
+
+### Breakdown:
+- **`this.dataset.sizing`**: This accesses the `sizing` custom data attribute (i.e., `data-sizing`) on the element represented by `this`. If the attribute exists, it returns its value.
+  
+- **`|| ""`**: This is a logical OR operator. If `this.dataset.sizing` is `undefined`, `null`, or any falsy value, it defaults to an empty string (`""`).
+
+### What This Does:
+The code assigns the value of the `data-sizing` attribute to the `change` variable. If `data-sizing` isn't present on the element, `change` will be assigned an empty string.
+
+### Example in HTML:
+```html
+<div data-sizing="large"></div>
+```
+
+In this case, if `this` refers to this `<div>`, `change` would be `"large"`. If the `data-sizing` attribute wasn't present, `change` would be `""`.
+-----------------------------------------------------------------------
+The documentElement property returns a document's element (as an Element object).
+
+The documentElement is read-only.
+-------------------------------------------------------------------------------------
+our JavaScript function, update(), is intended to dynamically update CSS variables based on user input. Here's a breakdown of how it works:
+
+const change = this.dataset.sizing || "";
+This line checks if there is a data-sizing attribute in the element that triggered the function (referred to as this). If the attribute exists, its value is stored in the change variable. If it doesn't exist, change is set to an empty string.
+
+document.documentElement.style.setProperty()
+This method is used to change the value of a CSS custom property (often referred to as a CSS variable).
+
+`--${this.name}`
+This is a template literal that dynamically creates the CSS variable name based on the name attribute of the element that triggered the function.
+
+this.value + change
+This concatenates the value of the element (this.value) with the change value (if any) and updates the CSS variable.

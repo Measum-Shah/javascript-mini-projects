@@ -1,0 +1,5 @@
+type use in button
+form
+text content to show output
+put value by keeping variable blank
+when use anonymous function put brcaket close at end

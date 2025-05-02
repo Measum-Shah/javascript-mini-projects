@@ -1,0 +1,3 @@
+.tostring fuction
+.value 
+new way of getting output at last

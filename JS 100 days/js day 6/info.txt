@@ -1,0 +1,4 @@
+date function in js
+output through inner html
+date conversion options
+use set interval to update time

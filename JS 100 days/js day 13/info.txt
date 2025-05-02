@@ -1,0 +1,7 @@
+sabse pahla ya dekho ka mouse rectangle mai enter hoa hai or vo mover kr raha hai
+phir ya pata kro ka hum center sa left pr hain ya right pr
+ab ya calculate kro ka hum center sa kitna left pr hai, jitna left pr hain utni intensity sa color lagao
+color - rgb (255,255,255)
+0-255
+rect.getBoundingClientRect() this shows location of div according to the screen
+use gsap map range 
